@@ -1,0 +1,8 @@
+---
+  all:
+    hosts:
+      client1:
+        ansible_host: 172.17.0.7
+        ansible_connection: ssh
+        ansible_user: admin
+        ansible_password: "!Password1"
