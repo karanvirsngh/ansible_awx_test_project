@@ -1,0 +1,7 @@
+- name: Hello World Sample
+  hosts: "{{ variable_host | default('all') }}"
+  tasks:
+    - name: Run an executable and send data to the stdin for the executable
+      win_command: powershell.exe -
+      args:
+        stdin: Write-Host test
